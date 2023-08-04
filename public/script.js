@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/api/products";
+const apiUrl = "/api/products";
 
 fetch(apiUrl)
   .then(response => {
