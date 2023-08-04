@@ -1,16 +1,21 @@
 {
+  "name": "reds-goods",
+  "version": "1.0.0",
+  "description": "reds-goods website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vercel dev",
+    "start": "vercel start"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
     "shoppy.gg": "^1.0.2"
   },
-  "name": "account-template-main",
-  "description": "- [Sellix.io / Shoppy.gg Template](#sellixio--shoppygg-template) <div style=\"text-align: center;\">",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@vercel/node": "^1.12.1",
+    "vercel": "^23.1.2"
   },
   "keywords": [],
   "author": "",

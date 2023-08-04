@@ -1,12 +1,7 @@
 const apiUrl = "/api/products";
 
 fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) { 
-      throw new Error('Network response was not ok'); 
-    }
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
     const productContainer = document.querySelector(".product-container .grids");
 
@@ -25,7 +20,7 @@ fetch(apiUrl)
             <span class="description">${product.description}</span>
             <div class="card-footer">
               <button data-shoppy-product="${product.id}" class="button style3 fit" type="submit" alt="Buy Now">Buy</button>
-              <span class="price">${product.price} <span>EUR</span></span> <!-- Assuming 'price' property holds the price -->
+              <span class="price">${product.price} <span>EUR</span></span>
             </div>
           </div>
         </a>
@@ -38,12 +33,5 @@ fetch(apiUrl)
     document.body.appendChild(script);
   })
   .catch(error => {
-    console.error('Error: ', error);
-    const productContainer = document.querySelector(".product-container");
-    productContainer.innerHTML = '';
-    const messageContainer = document.createElement('div');
-    //center the msg
-    messageContainer.style.textAlign = 'center';
-    messageContainer.innerHTML = '<h2>Server is under maintenance.</h2>';
-    productContainer.appendChild(messageContainer);
+    console.error('Error fetching products:', error);
   });
