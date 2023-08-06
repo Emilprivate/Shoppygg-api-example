@@ -50,6 +50,14 @@ const styles = `
   .button-container {
     margin-top: 15px;
   }
+  .embed--content{
+    background: #232323;
+    color: #fff;
+    padding: 1rem;
+    max-height: calc(100vh - 340px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 `;
 
 // Append the styles to the head
