@@ -6,7 +6,7 @@ I was building this custom Vercel app expanding on the capabilities of Shoppy.gg
 - If products consist of more than one of the same product such as (Example - Monthy), (Example - Lifetime), they'll be added under the same 'card' with additional "Buy Buttons" that represent the price for each product. Watch the demo picture for further analysis.
 
 ## Demo
-[!Alt](https://github.com/Emilprivate/Shoppygg-api-example/blob/master/resources/demo.png)
+![Demo](https://github.com/Emilprivate/Shoppygg-api-example/blob/master/resources/demo.png)
 
 ## Installation
 ```
