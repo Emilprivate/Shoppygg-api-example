@@ -33,7 +33,7 @@ npm run dev
 - Read the /public/script.js file to see how information is requested from the API
 
 ## Known bugs
-- If the product doesn't have an image (which you upload on shopyy.pgg) then no products will display.
+- If a product doesn't have an image (which you upload on shopyy.pgg) then no products will display.
 
 ## Credits
 - [Website Theme - Nyxiie](https://github.com/Nyxiie/account-template)
